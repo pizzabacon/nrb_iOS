@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Take Pic View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="TakePicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIw-lV-Klk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JyF-FL-d0K">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGK-sU-SsE">
+                                <rect key="frame" x="238" y="542" width="50" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" image="full_moon">
+                                    <color key="titleColor" red="1" green="0.08811572493" blue="0.61043461830000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhotoOrChooseFromLibrary" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z7m-nH-Yq5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muN-rh-fZB">
+                                <rect key="frame" x="6" y="542" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Ib4-wx-SuA"/>
+                                    <constraint firstAttribute="height" constant="50" id="uO4-ck-uT6"/>
+                                </constraints>
+                                <state key="normal" image="cancel-100">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gm-PV-pB3">
+                                <rect key="frame" x="541" y="542" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D2m-Ib-6VG"/>
+                                    <constraint firstAttribute="width" constant="50" id="fx6-t2-LGe"/>
+                                </constraints>
+                                <state key="normal" image="checkmark-100">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="kGK-sU-SsE" secondAttribute="centerX" id="37g-Di-UpL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kGK-sU-SsE" secondAttribute="bottom" constant="8" id="5EJ-gn-hKf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LIw-lV-Klk" secondAttribute="trailing" constant="-16" id="K9j-Va-04Q"/>
+                            <constraint firstItem="muN-rh-fZB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-5" id="LMH-s7-rpB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6gm-PV-pB3" secondAttribute="bottom" constant="8" id="M7W-bG-dj5"/>
+                            <constraint firstItem="LIw-lV-Klk" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="VVu-FC-q21"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LIw-lV-Klk" secondAttribute="bottom" id="a0J-R1-5iR"/>
+                            <constraint firstItem="LIw-lV-Klk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="bjM-jW-4z0"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="muN-rh-fZB" secondAttribute="bottom" constant="8" id="jAD-9D-csa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6gm-PV-pB3" secondAttribute="trailing" constant="-5" id="rBx-pE-Xhf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JyF-FL-d0K" id="NqM-Kz-FcU"/>
+                        <outlet property="previewView" destination="LIw-lV-Klk" id="Ldb-2a-VUh"/>
+                        <outlet property="takePicButton" destination="kGK-sU-SsE" id="DoB-l9-0Kn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancel-100" width="100" height="100"/>
+        <image name="checkmark-100" width="100" height="100"/>
+        <image name="full_moon" width="50" height="50"/>
+    </resources>
+</document>
