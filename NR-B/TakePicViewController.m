@@ -8,6 +8,7 @@
 
 #import "TakePicViewController.h"
 #import <FDTake/FDTakeController.h>
+#import "SendInfoViewController.h"
 
 @interface TakePicViewController ()
 
@@ -110,5 +111,9 @@
 }
 
 - (IBAction)submitPicture:(id)sender {
+    //show sendInfo view
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SendInfoViewController *viewController = (SendInfoViewController *)[storyboard instantiateViewControllerWithIdentifier:@"sendInfoView"];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 @end

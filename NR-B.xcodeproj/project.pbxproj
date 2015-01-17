@@ -15,6 +15,7 @@
 		5EF7E7B11A6AEFC6004D1A30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EF7E7AF1A6AEFC6004D1A30 /* LaunchScreen.xib */; };
 		5EF7E7BD1A6AEFC6004D1A30 /* NR_BTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7E7BC1A6AEFC6004D1A30 /* NR_BTests.m */; };
 		F4AF9DE4FAC9DB5E4450B7E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6887A247E44590F8DC7D8294 /* libPods.a */; };
+		F97777C81A6B1173006EC444 /* SendInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97777C71A6B1173006EC444 /* SendInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		6887A247E44590F8DC7D8294 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9D72DA28602D8C3691F81C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EFD3895C868D017B3D2CEFA4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F97777C61A6B1173006EC444 /* SendInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendInfoViewController.h; sourceTree = "<group>"; };
+		F97777C71A6B1173006EC444 /* SendInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				5EF7E7A51A6AEFC6004D1A30 /* AppDelegate.m */,
 				5EF7E7A71A6AEFC6004D1A30 /* TakePicViewController.h */,
 				5EF7E7A81A6AEFC6004D1A30 /* TakePicViewController.m */,
+				F97777C61A6B1173006EC444 /* SendInfoViewController.h */,
+				F97777C71A6B1173006EC444 /* SendInfoViewController.m */,
 				5EF7E7AA1A6AEFC6004D1A30 /* Main.storyboard */,
 				5EF7E7AD1A6AEFC6004D1A30 /* Images.xcassets */,
 				5EF7E7AF1A6AEFC6004D1A30 /* LaunchScreen.xib */,
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97777C81A6B1173006EC444 /* SendInfoViewController.m in Sources */,
 				5EF7E7A91A6AEFC6004D1A30 /* TakePicViewController.m in Sources */,
 				5EF7E7A61A6AEFC6004D1A30 /* AppDelegate.m in Sources */,
 				5EF7E7A31A6AEFC6004D1A30 /* main.m in Sources */,
