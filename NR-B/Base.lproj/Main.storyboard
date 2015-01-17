@@ -17,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIw-lV-Klk">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ea5-Tz-a9n">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JyF-FL-d0K">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGK-sU-SsE">
-                                <rect key="frame" x="238" y="542" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGK-sU-SsE">
+                                <rect key="frame" x="275" y="542" width="50" height="50"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <state key="normal" image="full_moon">
                                     <color key="titleColor" red="1" green="0.08811572493" blue="0.61043461830000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -65,21 +65,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="kGK-sU-SsE" secondAttribute="centerX" id="37g-Di-UpL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ea5-Tz-a9n" secondAttribute="trailing" constant="-16" id="3WO-SS-KTY"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kGK-sU-SsE" secondAttribute="bottom" constant="8" id="5EJ-gn-hKf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LIw-lV-Klk" secondAttribute="trailing" constant="-16" id="K9j-Va-04Q"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ea5-Tz-a9n" secondAttribute="bottom" id="5YU-dU-8aH"/>
+                            <constraint firstItem="Ea5-Tz-a9n" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="IuK-Rq-Oda"/>
                             <constraint firstItem="muN-rh-fZB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-5" id="LMH-s7-rpB"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6gm-PV-pB3" secondAttribute="bottom" constant="8" id="M7W-bG-dj5"/>
-                            <constraint firstItem="LIw-lV-Klk" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="VVu-FC-q21"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LIw-lV-Klk" secondAttribute="bottom" id="a0J-R1-5iR"/>
-                            <constraint firstItem="LIw-lV-Klk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="bjM-jW-4z0"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="muN-rh-fZB" secondAttribute="bottom" constant="8" id="jAD-9D-csa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6gm-PV-pB3" secondAttribute="trailing" constant="-5" id="rBx-pE-Xhf"/>
+                            <constraint firstItem="Ea5-Tz-a9n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="t9y-lL-uF7"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="muN-rh-fZB" id="Ap1-5c-K7l"/>
                         <outlet property="imageView" destination="JyF-FL-d0K" id="NqM-Kz-FcU"/>
-                        <outlet property="previewView" destination="LIw-lV-Klk" id="Ldb-2a-VUh"/>
+                        <outlet property="previewView" destination="Ea5-Tz-a9n" id="i4s-Na-eGk"/>
                         <outlet property="readyButton" destination="6gm-PV-pB3" id="CDu-4o-GXv"/>
                         <outlet property="takePicButton" destination="kGK-sU-SsE" id="DoB-l9-0Kn"/>
                     </connections>

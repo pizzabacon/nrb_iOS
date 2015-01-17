@@ -37,21 +37,33 @@
          UIImage *image = [[UIImage alloc] initWithData:imageData];
          
          self.imageView.image = image;
+         [self.view addSubview:self.imageView];
+         self.cancelButton.hidden = NO;
+         self.readyButton.hidden = NO;
+         self.takePicButton.hidden = YES;
          [self.previewView removeFromSuperview];
      }];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+- (void)setUpToTakePicture {
+    [self.imageView removeFromSuperview];
+    [self.view addSubview:self.previewView];
+    
+    [self.view bringSubviewToFront:self.cancelButton];
+    [self.view bringSubviewToFront:self.readyButton];
+    [self.view bringSubviewToFront:self.takePicButton];
+    
+    self.cancelButton.hidden = YES;
+    self.readyButton.hidden = YES;
+    self.takePicButton.hidden = NO;
+    
     AVCaptureSession *session = [[AVCaptureSession alloc] init];
     session.sessionPreset = AVCaptureSessionPresetMedium;
-    
-    CALayer *viewLayer = self.previewView.layer;
-    NSLog(@"viewLayer = %@", viewLayer);
     
     AVCaptureVideoPreviewLayer *captureVideoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
     
@@ -77,11 +89,11 @@
     [session addOutput:self.stillImageOutput];
 }
 
--(IBAction) captureNow
-{
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self setUpToTakePicture];
     
 }
-
 
 - (void)viewDidUnload {
     [self setImageView:nil];
@@ -94,6 +106,7 @@
 }
 
 - (IBAction)redoPicture:(id)sender {
+    [self setUpToTakePicture];
 }
 
 - (IBAction)submitPicture:(id)sender {
