@@ -37,7 +37,6 @@
          UIImage *image = [[UIImage alloc] initWithData:imageData];
          
          self.imageView.image = image;
-         
          [self.previewView removeFromSuperview];
      }];
 }
@@ -94,4 +93,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)redoPicture:(id)sender {
+}
+
+- (IBAction)submitPicture:(id)sender {
+}
 @end

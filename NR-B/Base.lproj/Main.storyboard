@@ -44,6 +44,9 @@
                                 <state key="normal" image="cancel-100">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="redoPicture:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="heo-m3-U3G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gm-PV-pB3">
                                 <rect key="frame" x="541" y="542" width="50" height="50"/>
@@ -54,6 +57,9 @@
                                 <state key="normal" image="checkmark-100">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitPicture:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Zc-rD-ZFk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -71,8 +77,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="muN-rh-fZB" id="Ap1-5c-K7l"/>
                         <outlet property="imageView" destination="JyF-FL-d0K" id="NqM-Kz-FcU"/>
                         <outlet property="previewView" destination="LIw-lV-Klk" id="Ldb-2a-VUh"/>
+                        <outlet property="readyButton" destination="6gm-PV-pB3" id="CDu-4o-GXv"/>
                         <outlet property="takePicButton" destination="kGK-sU-SsE" id="DoB-l9-0Kn"/>
                     </connections>
                 </viewController>
