@@ -8,15 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SendInfoViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *issueHeading;
-@property (strong, nonatomic) IBOutlet UILabel *locationHeading;
-@property (strong, nonatomic) IBOutlet UILabel *detailsHeading;
+@interface SendInfoViewController : UIViewController<UIPickerViewDelegate>
 
+@property (strong, nonatomic) NSMutableArray *issueNames;
+
+@property (strong, nonatomic) IBOutlet UILabel *issueHeading;
+@property (strong, nonatomic) IBOutlet UIPickerView *issuePicker;
+
+
+@property (strong, nonatomic) IBOutlet UILabel *locationHeading;
 @property (strong, nonatomic) IBOutlet UITextField *buildingTextField;
 @property (strong, nonatomic) IBOutlet UITextField *roomTextField;
-@property (strong, nonatomic) IBOutlet UITextView *detailsTextView;
 
+@property (strong, nonatomic) IBOutlet UILabel *detailsHeading;
+@property (strong, nonatomic) IBOutlet UITextView *detailsTextView;
 
 @property (strong, nonatomic) IBOutlet UIButton *sendButton;
 @property (strong, nonatomic) UIView *inputAccView;

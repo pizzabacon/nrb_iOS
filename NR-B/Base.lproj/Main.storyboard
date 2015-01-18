@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="1193" y="136"/>
         </scene>
-        <!--Add info-->
+        <!--Add Details-->
         <scene sceneID="41g-3p-cqG">
             <objects>
-                <viewController storyboardIdentifier="sendInfoView" title="Add info" id="A0a-2S-clP" customClass="SendInfoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sendInfoView" title="Add Details" id="A0a-2S-clP" customClass="SendInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Iu-v5-PGP"/>
                         <viewControllerLayoutGuide type="bottom" id="gsD-9M-RoM"/>
